@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title class="titulo">Billetera</title>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" 
+     rel="stylesheet" 
+     integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" 
+     crossorigin="anonymous">
+     <link href="Assets/Style/styleregistro.css" rel="stylesheet">
+     
+    <div class="bien">
+    </div>
+    </head>
+<div class="Logo">  
+    <img src="Assets/Media/Logo.png" alt="Logo" width="100" height="100">
+</div>
+<body>  
+
+
+<h1 class="titulo" style="text-align: center;">Registro de Usuario</h1>
+<form id="registroForm" class="row g-2">
+  <div class="col-md-2">
+     <div class="column-gap-md-6">
+    <label for="inputEmail4"  class="form-label">Email</label>
+    <input type="email" class="form-control" id="inputEmail4">
+  </div>
+  <div class="col-md-6">
+    <label for="inputPassword4" class="form-label">Contraseña</label>
+    <input type="password" class="form-control" id="inputPassword4">
+  </div>
+  <div class="col-6">
+    <label for="inputAddress"  class="form-label">Nombres</label>
+    <input type="text" class="form-control" id="Nombres">
+  </div>
+  <div class="col-6">
+    <label for="inputAddress2"  class="form-label">Apellido Paterno</label>
+    <input type="text" class="form-control" id="Apellido Paterno">
+  </div>
+  <div class="col-md-6">
+    <label for="inputCity" class="form-label">Apellido Materno</label>
+   <input type="text" class="form-control" id="apellidoMaterno">
+  </div>
+  <div class="col-md-6">
+    <label for="inputZip"  class="form-label">Telefono</label>
+    <input type="text" class="form-control" id="Telefono">
+  </div>
+  <div class="col-8">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" id="gridCheck">
+      <label class="form-check-label" for="gridCheck">
+        Acepto Terminos y condiciones
+      </label>
+    </div>
+  </div>
+  <div class="col-12">
+    <button onclick="registrar()">Registrarse</button>
+
+  </div>
+</form>
+    
+            <a href="Index.html" class="btn btn-primary">volver al inicio</a>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="Assets/js/jsregistro.js"></script>
+
+</body>                

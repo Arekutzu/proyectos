@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Billeter - Depositar</title>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" 
+     rel="stylesheet" 
+     integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" 
+     crossorigin="anonymous">
+      <link href="Assets/Style/styledeposit.css" 
+      rel="stylesheet">
+</head>
+
+<div class="Logo">
+    <img src="Assets/Media/Logo.png" alt="Logo" width="100" height="100">
+</div>
+
+<body>
+  <div class="container">
+  <h2>Depositar / Retirar</h2>
+
+  <form id="deposit-form">
+    <div class="form-group">
+      <label for="deposit-amount">Monto a depositar:</label>
+      <input type="number" class="form-control" id="deposit-amount" placeholder="Ingrese el monto">
+    </div>
+    <button type="submit" class="btn btn-success mt-3">Depositar Dinero</button>
+  </form>
+
+  <form id="withdraw-form" class="mt-4">
+    <div class="form-group">
+      <label for="discount-amount">Monto a retirar:</label>
+      <input type="number" class="form-control" id="discount-amount" placeholder="Ingrese monto">
+    </div>
+    <button type="submit" class="btn btn-success mt-3">Retirar Dinero</button>
+  </form>
+
+  <a href="Menu principal.html" class="btn btn-outline-dark">Ir al Menu Principal</a>
+</div>
+
+<script src="Assets/js/transacciones.js"></script>
+<script src="Assets/js/jsdeposit.js"></script>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title class="titulo">Firs National Blanlk</title>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+    rel="stylesheet" 
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" 
+    crossorigin="anonymous">
+
+     <link href="Assets/Style/styleMenuPrincipañ.css" rel="stylesheet">
+
+    <div class="bien">
+    <h1  text-align="center">Bienvenidos!</h1>
+    </div>
+
+</head>
+<div class="Logo">
+    <img src="Assets/Media/Logo.png" alt="Logo" width="100" height="100">
+</div>
+<H1 class="titulo" text-align="center">Estado de la cuenta</H1>
+<body>
+  <div class="container">
+    
+   <div class="form-group">
+  <label>Total disponible:</label>
+  <div id="saldo">$0</div>
+</div>
+
+    <script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const usuarioActivo = localStorage.getItem("usuarioActivo");
+    const saldos = JSON.parse(localStorage.getItem("saldos")) || {};
+    const saldoUsuario = Number(saldos[usuarioActivo] || 0);
+
+    const el = document.getElementById("saldo");
+    if (el) el.textContent = "$" + saldoUsuario.toLocaleString("es-CL");
+  });
+    </script>
+
+    <button onclick="logout()" class="btn btn-outline-danger">Cerrar sesión</button>
+
+    <script>
+    function logout(){
+    localStorage.removeItem("usuarioActivo");
+    window.location.href="index.html";
+    }
+    </script>
+    <script>
+    if(!localStorage.getItem("usuarioActivo")){
+    window.location.href="index.html";
+    }   
+    </script>
+    <script src="Assets/js/menu.js"></script>
+
+
+      <a href="deposit.html" class="btn btn-outline-secondary">Ingresar</a>
+      <a href="sendmoney.html" class="btn btn-outline-secondary">Transferencia</a>
+      <a href="transaccion.html" class="btn btn-outline-secondary">Ultmos movimientos</a>
+      </div>
+
+</body>
+</html>
